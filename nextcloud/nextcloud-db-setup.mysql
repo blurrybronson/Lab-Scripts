@@ -1,0 +1,8 @@
+# creating the nextcloud databse
+IF NOT EXIST CREATE database nextcloud_db;
+
+# creating nextcloud user to managed the new database
+# example user: 'nextcloud'@'localhost; IDENTIFIED BY 'password';
+CREATE USER ''@'' IDENTIFIED BY '';
+GRANT ALL PRIVILEGES on nextcloud_db.* TO ''@'';
+FLUSH PRIVILEGES;
